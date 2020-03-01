@@ -7,7 +7,6 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
-    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -16,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +33,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://doyoun8813.github.io/movie_app_2020/"
+  "homepage": "https://doyoun8813.github.io/movie-app-2020/",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
